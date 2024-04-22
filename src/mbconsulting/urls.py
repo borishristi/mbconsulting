@@ -23,6 +23,6 @@ from mbconsulting.views import home_old
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mbsite.urls'), name='home_view'),
-    path('site/', include('website.urls'), name='home_view'),
+    # path('site/', include('website.urls'), name='home_view'),
     path('old/', home_old, name='home_old'),
 ]
