@@ -1,3 +1,5 @@
+from mbconsulting import settings
+from django.conf.urls.static import static
 from django.urls import path
 
 from .views import home_view, contact_view, service_view, about_view, project_view, feature_view, quote_view, team_view
@@ -14,4 +16,4 @@ urlpatterns = [
     path('team/', team_view, name="team"),
     path('testimonial/', testimonial_view, name="testimonial"),
     path('error_404/', error_404_view, name="404"),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
