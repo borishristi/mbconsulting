@@ -142,9 +142,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Liens Rapides</h4>
-                    <a class="btn btn-link" href="">A Propos</a>
-                    <a class="btn btn-link" href="">Contactez-nous</a>
-                    <a class="btn btn-link" href="">Nos Services</a>
+                    <a class="btn btn-link" href="{% url 'about' %}">A Propos</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contactez-nous</a>
+                    <a class="btn btn-link" href="{% url 'service' %}">Nos Services</a>
                     <a class="btn btn-link" href="">Termes & Condition</a>
                     <a class="btn btn-link" href="">Support</a>
                 </div>
@@ -162,7 +162,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">www.mbconsulting.com</a>, Tout Droit Reservé.
+                        &copy; <a class="border-bottom" href="{% url 'home' %}">www.mbconsulting.com</a>, Tout Droit Reservé.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
